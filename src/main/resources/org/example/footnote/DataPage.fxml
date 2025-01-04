@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="375.0" prefWidth="337.0" styleClass="Base" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.footnote.Controller">
+   <children>
+      <Button layoutX="89.0" layoutY="236.0" mnemonicParsing="false" onAction="#UpdateGames" prefHeight="66.0" prefWidth="162.0" text="Update Leagues" />
+      <Button layoutX="89.0" layoutY="87.0" mnemonicParsing="false" onAction="#AddGames" prefHeight="66.0" prefWidth="162.0" text="Add New Games" />
+      <Button layoutY="2.0" mnemonicParsing="false" onAction="#loadMainPage" text="Return" />
+      <Label fx:id="DataLabel" layoutX="91.0" layoutY="332.0" prefHeight="29.0" prefWidth="162.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

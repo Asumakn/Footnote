@@ -1,0 +1,101 @@
+.table-view{
+-fx-background-color: rgb(18, 97, 64);
+-fx-color: rgb(5, 114, 72);
+-fx-text-fill:rgb(107, 153, 117);
+
+
+
+}
+.table-view:focused{
+    -fx-background-color: rgb(36, 182, 182);
+    -fx-border: 5px;
+    -fx-border-color: rgb(131, 228, 154);
+    
+    
+    
+    }
+.table-view .column-header-background.label{
+    -fx-text-fill:rgb(185, 206, 190);
+    -fx-font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.Base{
+-fx-background-color: rgb(22, 88, 61);
+
+
+
+
+}
+.columnStyle{
+
+    -fx-color: white;
+}
+
+.label{
+    -fx-color: white;
+    -fx-text-fill:rgb(131, 228, 154);
+    -fx-font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.button{
+
+    -fx-font-family:Verdana, Geneva, Tahoma, sans-serif;
+-fx-background-color: rgb(5, 114, 72);
+-fx-text-fill:rgb(131, 228, 154);
+-fx-border: 5px;
+-fx-border-color: rgb(131, 228, 154);
+
+}
+.button:hover{
+
+    -fx-font-family:Verdana, Geneva, Tahoma, sans-serif;
+-fx-background-color: rgb(131, 228, 154);
+-fx-text-fill:rgb(5, 114, 72);
+-fx-border: 5px;
+-fx-border-color: rgb(131, 228, 154);
+
+}
+
+
+.combo-box{
+
+   
+-fx-color: rgb(5, 114, 72);
+-fx-font-family:Verdana, Geneva, Tahoma, sans-serif;
+-fx-border: 5px;
+-fx-border-color: rgb(131, 228, 154);
+}
+.combo-box:hover{
+    -fx-background-color:rgb(100, 226, 178) ;
+    -fx-text-fill:rgb(131, 228, 154);
+    -fx-font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.combo-box .list-view{
+    -fx-text-fill:rgb(131, 228, 154);
+    -fx-background-color:rgb(99, 196, 128);
+}
+
+.table-row-cell{
+
+-fx-background-color:rgb(131, 228, 154);
+-fx-font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.table-row-cell:odd{
+
+    -fx-background-color:rgb(99, 196, 128);
+    -fx-font-family:Verdana, Geneva, Tahoma, sans-serif;
+    
+    }
+.anchor-pane{
+    -fx-background-color: rgb(5, 114, 72);
+    -fx-font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.text-area .content{
+    -fx-background-color: rgb(5, 114, 72);
+    -fx-font-family:Verdana, Geneva, Tahoma, sans-serif;
+
+
+}
+.text-area{
+    -fx-text-fill:rgb(131, 228, 154);
+}

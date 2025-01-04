@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="804.0" styleClass="Base" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.footnote.Controller">
+   <children>
+      <Button layoutX="654.0" layoutY="415.0" mnemonicParsing="false" onAction="#loadHomePage" prefHeight="60.0" prefWidth="150.0" text="Matches" />
+      <Button layoutY="415.0" mnemonicParsing="false" onAction="#loadDataPage" prefHeight="60.0" prefWidth="125.0" text="Data Page" />
+   </children>
+</AnchorPane>
