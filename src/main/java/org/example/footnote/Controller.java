@@ -254,7 +254,6 @@ public void SaveNote(){
         Model.updateNote(notePlayer.getID(),Application.activeGame.getID(), Notebox.getText());
     }
 
-
     }
     public void PlayerSaveNote(){
 
