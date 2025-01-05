@@ -63,6 +63,7 @@ public class Controller {
     public TextArea PlayerTxtBox = new TextArea();
     public Label PlayerNameLabel = new Label();
     public Label DataLabel= new Label();
+    public TableView<Notes> MainNoteTable = new TableView();
     private Stage stage;
     private Scene scene;
     private Parent root;
@@ -151,6 +152,24 @@ public void loadPlayerPageTables(){
 
 
 }
+
+    public void LoadMainTable(){
+        PlayerNameLabel.setText(Application.activePlayer.getName());
+        GameColumn.setCellValueFactory(new PropertyValueFactory<Stats,String>("Appearances"));
+        AssistsColumn.setCellValueFactory(new PropertyValueFactory<Stats,String>("Assists"));
+        GoalsColumn.setCellValueFactory(new PropertyValueFactory<Stats,String>("Goals"));
+        RedColumn.setCellValueFactory(new PropertyValueFactory<Stats,String>("RedCard"));
+        YellowColumn.setCellValueFactory(new PropertyValueFactory<Stats,String>("YellowCard"));
+
+        StatTable.getItems().addAll(Model.fetchPlayerStat(Application.activePlayer.getID()));
+        GameIDColumn.setCellValueFactory(new PropertyValueFactory<Notes,String>("GameID"));
+        GameDateColumn.setCellValueFactory(new PropertyValueFactory<Notes,String>("Date"));
+
+        MainNoteTable.getItems().addAll(Model.fetchAllNotes());
+
+
+
+    }
 public void showNotes(){
     int selection = PlayerNoteTable.getSelectionModel().getFocusedIndex();
 PlayerTxtBox.setText(PlayerNoteTable.getItems().get(selection).getNotes());
@@ -158,6 +177,14 @@ PlayerTxtBox.setText(PlayerNoteTable.getItems().get(selection).getNotes());
 
 
 }
+    public void showNotesMain(){
+        int selection = MainNoteTable.getSelectionModel().getFocusedIndex();
+        PlayerTxtBox.setText(MainNoteTable.getItems().get(selection).getNotes());
+
+
+
+    }
+
 public void LoadHomeTable(){
 
     HomeTable.getItems().clear();
@@ -196,6 +223,7 @@ if (Teambox.getValue()==null&&Teambox2.getValue()==null){
 
 }
 public void initialize(){
+    LoadMainTable();
     loadPlayerPageTables();
     loadNoteTable();
     for (League item:Model.fetchAllLeagues()){
@@ -232,6 +260,14 @@ public void SaveNote(){
 
 
             Model.updateNote(Application.activePlayer.getID(),Application.activeGame.getID(), PlayerTxtBox.getText());
+
+
+
+    }
+    public void PlayerSaveNoteMain(){
+ int selection = MainNoteTable.getSelectionModel().getFocusedIndex();
+
+        Model.updateNote(Application.activePlayer.getID(),MainNoteTable.getItems().get(selection).getGameID(), PlayerTxtBox.getText());
 
 
 

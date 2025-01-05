@@ -479,6 +479,23 @@ return notes;
         }
         return null ;
     }
+    public static List<Notes> fetchAllNotes(){
+        String sql = "Select * from Note ";
+        List<Notes> notes  = new ArrayList<>();
+        try(
+                Connection conn  = connect();
+                PreparedStatement Pstmt = conn.prepareStatement(sql);
+                ResultSet rs  = Pstmt.executeQuery();
+        ) {
+            while (rs.next()) {
+                notes.add(  new Notes(rs.getString("GameID"), rs.getString("NoteText"), rs.getString("Date")));
+            }
+            return notes;
+        }catch(SQLException e){
+            System.out.println();
+        }
+        return null ;
+    }
     public static void updateNote(String PlayerID,String GameID,String Text){
         String sql = "UPDATE Note SET NoteText = \'"+Text+"\' WHERE PlayerID = "+PlayerID+" AND GameID = " +GameID ;
         System.out.println(sql);
