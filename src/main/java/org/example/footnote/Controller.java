@@ -9,6 +9,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 import org.json.simple.parser.ParseException;
@@ -64,7 +65,8 @@ public class Controller {
     public Label PlayerNameLabel = new Label();
     public Label DataLabel= new Label();
     public TableView<Notes> MainNoteTable = new TableView();
-    private Stage stage;
+    public ImageView PlayerImage = new ImageView();
+    private Stage stage  ;
     private Scene scene;
     private Parent root;
     public TableColumn<Game,String> AwayTeamColumn = new TableColumn<>();
@@ -137,6 +139,7 @@ Teambox2.getItems().clear();
 }
 public void loadPlayerPageTables(){
     PlayerNameLabel.setText(Application.activePlayer.getName());
+    PlayerImage.setImage(new Image("file:Images/"+Application.activePlayer.getID()+".png"));
     GameColumn.setCellValueFactory(new PropertyValueFactory<Stats,String>("Appearances"));
     AssistsColumn.setCellValueFactory(new PropertyValueFactory<Stats,String>("Assists"));
     GoalsColumn.setCellValueFactory(new PropertyValueFactory<Stats,String>("Goals"));

@@ -1,5 +1,6 @@
 package org.example.footnote;
 
+import com.almasb.fxgl.net.DownloadCallback;
 import com.fasterxml.jackson.core.JsonParser;
 import com.fasterxml.jackson.databind.util.JSONPObject;
 import com.sun.net.httpserver.Request;
@@ -18,6 +19,7 @@ import java.net.URL;
 import java.time.LocalDateTime;
 import java.util.Objects;
 import java.util.Scanner;
+
 
 public class DataRetriever {
     public static String fetchData(String id){

@@ -10,8 +10,8 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="804.0" styleClass="Base" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.footnote.Controller">
    <children>
-      <Button layoutX="648.0" layoutY="422.0" mnemonicParsing="false" onAction="#loadHomePage" prefHeight="60.0" prefWidth="150.0" text="Matches" />
-      <Button layoutX="233.0" layoutY="422.0" mnemonicParsing="false" onAction="#loadDataPage" prefHeight="60.0" prefWidth="150.0" text="Data Page" />
+      <Button layoutX="703.0" layoutY="444.0" mnemonicParsing="false" onAction="#loadHomePage" prefHeight="38.0" prefWidth="101.0" text="Matches" />
+      <Button mnemonicParsing="false" onAction="#loadDataPage" prefHeight="38.0" prefWidth="101.0" text="Data Page" />
       <TextArea fx:id="PlayerTxtBox" layoutX="341.0" prefHeight="372.0" prefWidth="463.0" />
       <TableView fx:id="MainNoteTable" layoutY="105.0" onMouseClicked="#showNotesMain" prefHeight="377.0" prefWidth="233.0">
          <columns>

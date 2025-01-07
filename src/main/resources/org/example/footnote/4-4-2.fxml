@@ -61,57 +61,57 @@
          <children>
             <ImageView fx:id="PlayerIMG"  fitHeight="160.0" fitWidth="145.0" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <image>
-                  <Image url="@Jersey.png" />
+                  <Image url="@../../../../../../Images/Jersey.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="160.0" fitWidth="145.0" GridPane.columnIndex="1" GridPane.valignment="TOP">
                <image>
-                  <Image url="@Jersey.png" />
+                  <Image url="@../../../../../../Images/Jersey.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="160.0" fitWidth="145.0" GridPane.columnIndex="1" GridPane.rowIndex="3" GridPane.valignment="TOP">
                <image>
-                  <Image url="@Jersey.png" />
+                  <Image url="@../../../../../../Images/Jersey.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="160.0" fitWidth="145.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
                <image>
-                  <Image url="@Jersey.png" />
+                  <Image url="@../../../../../../Images/Jersey.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="160.0" fitWidth="145.0" GridPane.columnIndex="3" GridPane.valignment="TOP">
                <image>
-                  <Image url="@Jersey.png" />
+                  <Image url="@../../../../../../Images/Jersey.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="160.0" fitWidth="145.0" GridPane.columnIndex="3" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <image>
-                  <Image url="@Jersey.png" />
+                  <Image url="@../../../../../../Images/Jersey.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="160.0" fitWidth="145.0" GridPane.columnIndex="3" GridPane.rowIndex="3" GridPane.valignment="TOP">
                <image>
-                  <Image url="@Jersey.png" />
+                  <Image url="@../../../../../../Images/Jersey.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="160.0" fitWidth="145.0" GridPane.columnIndex="3" GridPane.rowIndex="4">
                <image>
-                  <Image url="@Jersey.png" />
+                  <Image url="@../../../../../../Images/Jersey.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="160.0" fitWidth="145.0" GridPane.columnIndex="5" GridPane.rowIndex="3" GridPane.valignment="TOP">
                <image>
-                  <Image url="@Jersey.png" />
+                  <Image url="@../../../../../../Images/Jersey.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="160.0" fitWidth="145.0" GridPane.columnIndex="5" GridPane.rowIndex="1" GridPane.valignment="TOP">
                <image>
-                  <Image url="@Jersey.png" />
+                  <Image url="@../../../../../../Images/Jersey.png" />
                </image>
             </ImageView>
             <ImageView fitHeight="160.0" fitWidth="145.0" GridPane.rowIndex="2" GridPane.valignment="TOP">
                <image>
-                  <Image url="@Jersey.png" />
+                  <Image url="@../../../../../../Images/Jersey.png" />
                </image>
             </ImageView>
             <ComboBox fx:id="PitchBoxGK" prefWidth="150.0" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />

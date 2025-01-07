@@ -20,7 +20,7 @@
             <TableColumn fx:id="YellowColumn" prefWidth="95.0" text="Yellow" />
         </columns>
       </TableView>
-      <ImageView fitHeight="226.0" fitWidth="277.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="PlayerImage" fitHeight="226.0" fitWidth="277.0" pickOnBounds="true" preserveRatio="true" />
       <TableView fx:id="PlayerNoteTable" layoutX="-1.0" layoutY="226.0" onMouseClicked="#showNotes" prefHeight="377.0" prefWidth="233.0">
         <columns>
           <TableColumn fx:id="GameIDColumn" prefWidth="117.0" text="GameID" />
@@ -28,9 +28,9 @@
         </columns>
       </TableView>
       <TextArea fx:id="PlayerTxtBox" layoutX="493.0" layoutY="113.0" prefHeight="431.0" prefWidth="472.0" />
-      <Button layoutX="848.0" layoutY="72.0" mnemonicParsing="false" onAction="#PlayerSaveNote" prefHeight="41.0" prefWidth="117.0" text="Save" />
-      <Button mnemonicParsing="false" onAction="#loadNotesPage" prefHeight="41.0" prefWidth="117.0" text="Return" />
-      <Label fx:id="PlayerNameLabel" layoutX="497.0" prefHeight="41.0" prefWidth="458.0">
+      <Button layoutX="884.0" layoutY="81.0" mnemonicParsing="false" onAction="#PlayerSaveNote" prefHeight="32.0" prefWidth="78.0" text="Save" />
+      <Button layoutX="884.0" layoutY="6.0" mnemonicParsing="false" onAction="#loadNotesPage" prefHeight="32.0" prefWidth="78.0" text="Return" />
+      <Label fx:id="PlayerNameLabel" layoutX="490.0" layoutY="1.0" prefHeight="41.0" prefWidth="394.0">
          <font>
             <Font size="27.0" />
          </font>
